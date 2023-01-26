@@ -1,0 +1,166 @@
+#root {
+  font-family: "Poppins", sans-serif;
+}
+
+.MuiRating-icon {
+  font-size: 25px;
+  color: rgb(235, 157, 48);
+}
+.buttonEdit {
+  background-color: blue !important;
+  color: white !important;
+  border-radius: 10px !important;
+  padding: 0 20px !important;
+  margin-left: 10px !important;
+}
+
+.buttonEdit:hover {
+  background-color: #ed3434 !important;
+  transition: 0.5s;
+}
+.basket {
+  color: rgb(170, 38, 38);
+}
+.basket:hover {
+  color: rgb(43, 154, 26);
+  transition: 0.5s;
+}
+a {
+  text-decoration: none;
+}
+
+.searchBar {
+  width: 600px;
+}
+.MuiInputBase-root {
+  border-radius: 100px !important;
+}
+
+.MuiPaper-root {
+  padding: 7px;
+}
+
+.css-80r6qc-MuiListItem-root {
+  padding: 0px !important;
+  margin-top: 5px;
+}
+.MuiPagination-ul {
+  margin-top: 20px !important;
+}
+.detailInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid red;
+  padding: 0 20px;
+  margin-left: 10px;
+}
+.Si8ngleProductPage {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.MuiDrawer-paper {
+  margin-top: 77px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 100px;
+}
+
+.styleappbar {
+  background-color: #fff !important;
+  color: #103b66;
+  width: 88%;
+  /* width: calc(100% - 255px) !important; */
+  margin: auto !important;
+  /* padding: 0 100px 0 30px; */
+  display: flex;
+}
+
+.CartI {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.styleformbutton {
+  margin-top: 30px !important;
+  padding: 10px 0 !important;
+  border-radius: 20px !important;
+  border: none;
+  background-color: blue !important;
+  color: white !important;
+  font-size: 20px !important;
+  letter-spacing: 5px !important;
+}
+.formBox {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #8989c7;
+  padding: 20px;
+  margin: auto;
+  border-radius: 20px;
+}
+.css-1160xiw-MuiPaper-root-MuiDrawer-paper {
+  width: 300px !important;
+}
+.css-1ub4t4n {
+  justify-content: center;
+}
+
+.SingleProductImg {
+  width: 30%;
+}
+
+/* @media screen and (max-width: 1382px) {
+  .Si8ngleProductPage {
+    flex-direction: column;
+  }
+  .detailInfo {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1382px) {
+  .styleappbar {
+    padding: 10px 0 !important;
+  }
+}
+@media screen and (max-width: 670px) {
+  .css-18isbuf-MuiDrawer-docked {
+    width: 0px;
+  }
+  .MuiDrawer-paper {
+    width: 100px !important;
+  }
+  .styleappbar {
+    width: calc(100% - 100px) !important;
+  }
+  .contnrs {
+    margin-left: 100px !important;
+  }
+  .categgory {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+  .formBox {
+    width: 80% !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .MuiDrawer-paper {
+    display: none !important;
+  }
+  .contnrs {
+    margin-left: 0px !important;
+  }
+  .styleappbar {
+    width: 100% !important;
+  }
+  .CartI {
+    width: 100% !important;
+  }
+} */
