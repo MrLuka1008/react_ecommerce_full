@@ -5,14 +5,9 @@ import { UseCategories } from "../../redux";
 import { SidebarHeader } from "./SidebarHeader";
 
 const StyledListItem = styled(ListItem)(() => ({
-  // padding: "5px 0px 3px 15px",
-  // // margin: "0px",
-  // // fontSize: "40px",
-  // color: "black",
-  // fontWeight: "800",
-  // display: "flex",
-  // justifyContent: "center",
+  color: "black",
 }));
+
 const StyledListItemText = styled(ListItemText)(() => ({
   borderBottom: "1px solid black",
   textAlign: "center",
