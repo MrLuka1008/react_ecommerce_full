@@ -26,7 +26,7 @@ function App() {
     <Box>
       <Sidebar />
       <Header />
-      <StyledContentContainer className="contnrs">
+      <StyledContentContainer>
         <RoutesComponent />
       </StyledContentContainer>
     </Box>

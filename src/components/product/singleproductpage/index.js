@@ -12,11 +12,20 @@ import { Box, Button, Typography } from "@mui/material";
 import styled from "@emotion/styled";
 import "../../../App.css";
 
+const detailInfoSingle = styled(Box)(() => ({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  padding: "5px 24px",
+  marginLeft: "20px",
+}));
+
 const StyleTypography = styled(Typography)(() => ({
   fontSize: "25px",
   marginBottom: "20px",
   color: "black",
 }));
+
 const StyleButton = styled(Button)(() => ({
   fontSize: "14px",
   marginBottom: "10px",
@@ -44,15 +53,15 @@ export const DetailedProduct = () => {
 
   return (
     <Box className="singlePageStyle">
-      <img className="SingleProductImg" src={singleProduct?.image} />
-      <Box className="detailInfo">
+      <img className="singlePageStyleImg" src={singleProduct?.image} />
+      <detailInfoSingle className="detailInfo">
         <StyleTypography> Name : {singleProduct?.name} </StyleTypography>
         <StyleTypography> Price : $ {singleProduct?.price} </StyleTypography>
         <StyleTypography> description : {singleProduct?.description} </StyleTypography>
         <StyleTypography> Brand : {singleProduct?.brand} </StyleTypography>
 
         <StyleButton onClick={() => navigate("/")}> Go Home Page</StyleButton>
-      </Box>
+      </detailInfoSingle>
     </Box>
   );
 };

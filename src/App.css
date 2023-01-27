@@ -33,25 +33,6 @@ a {
   width: 300px;
 }
 
-.MuiPaper-root {
-  padding: 7px;
-}
-
-.css-80r6qc-MuiListItem-root {
-  padding: 0px !important;
-  margin-top: 5px;
-}
-.MuiPagination-ul {
-  margin-top: 20px !important;
-}
-.detailInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 2px solid black;
-  padding: 0 20px;
-  margin-left: 10px;
-}
 .singlePageStyle {
   margin: auto;
   display: flex;
@@ -67,7 +48,7 @@ a {
   width: 100px;
 }
 
-.styleappbar {
+.barStled {
   background-color: #fff !important;
   color: #369a1a;
   width: 88%;
@@ -100,13 +81,15 @@ a {
   margin: auto;
   border-radius: 20px;
 }
+
+.singlePageStyleImg {
+  width: 30%;
+}
+
 .css-1160xiw-MuiPaper-root-MuiDrawer-paper {
+  gap: 30px;
   width: 300px !important;
 }
 .css-1ub4t4n {
   justify-content: center;
-}
-
-.SingleProductImg {
-  width: 30%;
 }

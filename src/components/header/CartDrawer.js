@@ -9,29 +9,26 @@ import { Typography } from "../shared";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const StyledBox = styled(Box)(() => ({
-  padding: "15px",
+  padding: "20px",
   display: "flex",
   justifyContent: "space-between",
-  border: "2px solid red",
-  marginBottom: "5px",
-  borderRadius: "25px",
+  borderBottom: "2px solid green",
+  marginBottom: "15px",
   color: "black",
-  fontWeight: "700",
 }));
 const StyledTotalBox = styled(Box)(() => ({
-  textAlign: "right",
   padding: "8px",
-  border: "2px inset  blue",
+  borderBottom: "2px solid black",
   fontWeight: "700",
-  borderRadius: "25px",
+  fontSize: "20px",
 }));
 const StyledButton = styled(Button)(() => ({
-  backgroundColor: "red",
+  backgroundColor: "green",
   marginTop: "10px",
   color: "white",
-  borderRadius: "20px",
   "&:hover": {
-    backgroundColor: "blue",
+    background: "green",
+    padding: "10px",
   },
 }));
 const StyledEmpyBasketBox = styled(Box)(() => ({
@@ -62,7 +59,7 @@ export const CartDrawer = ({ isOpen, onClose }) => {
         return (
           <StyledBox key={_id}>
             <Typography>{name}</Typography>
-            <Typography>x {quantity}</Typography>
+            <Typography>{quantity}</Typography>
             <Typography>{total}</Typography>
           </StyledBox>
         );
@@ -98,7 +95,7 @@ export const CartDrawer = ({ isOpen, onClose }) => {
         </>
       ) : (
         <StyledEmpyBasketBox>
-          <AiOutlineShoppingCart size={35} color="red" /> Basket is empty
+          <AiOutlineShoppingCart size={20} color="green" /> Basket`s empty
         </StyledEmpyBasketBox>
       )}
     </Drawer>

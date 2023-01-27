@@ -9,19 +9,11 @@ import { useCartItems } from "../../redux";
 import { CartDrawer } from "./CartDrawer";
 import { AiFillHome } from "react-icons/ai";
 
-// const StyledAppBar = styled(AppBar)(() => ({
-//   background: "#fff",
-//   color: "#103B66",
-//   width: "88%",
-//   width: "calc(100% - 255px)",
-//   padding: "0 100px 0 30px",
-//   display: "flex",
-// }));
-
 const StyledToolBar = styled(Toolbar)(() => ({
   display: "flex",
   justifyContent: "space-around",
 }));
+
 const StyledBadge = styled(Badge)(() => ({
   "& .MuiBadge-badge": {
     width: "20px",
@@ -44,7 +36,7 @@ export const Header = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
   return (
     <Box>
-      <AppBar className="styleappbar">
+      <AppBar className="barStled">
         <StyledToolBar>
           <StyledHomeLink to="/">
             {" "}
