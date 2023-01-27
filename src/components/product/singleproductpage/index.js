@@ -12,25 +12,20 @@ import { Box, Button, Typography } from "@mui/material";
 import styled from "@emotion/styled";
 import "../../../App.css";
 
-const StyleBox = styled(Box)(() => ({
-  display: "flex",
-  justifyContent: "center",
-  margin: "auto",
-}));
-
 const StyleTypography = styled(Typography)(() => ({
   fontSize: "25px",
   marginBottom: "20px",
+  color: "black",
 }));
 const StyleButton = styled(Button)(() => ({
-  fontSize: "20px",
-  marginBottom: "20px",
-  backgroundColor: "blue",
+  fontSize: "14px",
+  marginBottom: "10px",
+  backgroundColor: "black",
   color: "white",
-  padding: "2px 80px",
-  borderRadius: "20px",
+  borderRadius: "10px",
   "&:hover": {
-    backgroundColor: "red",
+    color: "black",
+    boxShadow: "1px 1px 20px 6px black",
   },
 }));
 export const DetailedProduct = () => {
@@ -48,7 +43,7 @@ export const DetailedProduct = () => {
   }, [state.id]);
 
   return (
-    <Box className="Si8ngleProductPage">
+    <Box className="singlePageStyle">
       <img className="SingleProductImg" src={singleProduct?.image} />
       <Box className="detailInfo">
         <StyleTypography> Name : {singleProduct?.name} </StyleTypography>
