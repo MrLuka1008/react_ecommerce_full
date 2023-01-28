@@ -3,7 +3,7 @@ import { Box } from "@mui/system";
 import React, { useState } from "react";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import { logoutUser, useUserInfo } from "../../redux";
+import { logoutUser, setSelectedProduct, useUserInfo } from "../../redux";
 import { getUserInitials, isUserAdmin } from "../../application";
 import { useDispatch } from "react-redux";
 export const UserIcon = () => {
@@ -49,6 +49,7 @@ export const UserIcon = () => {
             <MenuItem>
               <Button
                 onClick={() => {
+                  dispatch(setSelectedProduct([]));
                   navigate("/products/new");
                 }}
               >
