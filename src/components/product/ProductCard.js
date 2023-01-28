@@ -53,7 +53,8 @@ export const ProductCard = ({ name, _id, image, price, category, brand, descript
         productId: _id,
         userId: useInfo?._id,
         url: `${category}${search}`,
-        Rating: e.target.value,
+        rating: e.target.value,
+        isHome: pathname === "/",
       })
     );
   };
@@ -62,7 +63,7 @@ export const ProductCard = ({ name, _id, image, price, category, brand, descript
     <Grid item className="CartI">
       <Card style={{ padding: "10px", borderRadius: "30px" }}>
         <Link
-          to={`products/categories/${category}/${name}`}
+          to={`/products/categories/${category}/${name}`}
           state={{ id: _id }}
           replace={true}
           style={{ textDecoration: "none" }}
