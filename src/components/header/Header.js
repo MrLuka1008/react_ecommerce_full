@@ -7,7 +7,6 @@ import { UserIcon } from "./UserIcon";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { useCartItems } from "../../redux";
 import { CartDrawer } from "./CartDrawer";
-import { AiFillHome } from "react-icons/ai";
 
 const StyledToolBar = styled(Toolbar)(() => ({
   display: "flex",

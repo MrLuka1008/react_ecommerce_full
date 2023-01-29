@@ -1,5 +1,5 @@
 import React from "react";
-import { parsePath, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 
 export const useQuertParam = (key) => {
   const [params, setParams] = useSearchParams();

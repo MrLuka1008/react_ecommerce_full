@@ -1,7 +1,5 @@
 import styled from "@emotion/styled";
 import { Drawer, Box, Button } from "@mui/material";
-import { border, fontSize, textAlign } from "@mui/system";
-import { hover } from "@testing-library/user-event/dist/hover";
 import React from "react";
 import { useDispatch } from "react-redux";
 import { clearCart, useCartItems, useUserInfo, saveCart } from "../../redux";

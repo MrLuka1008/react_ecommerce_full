@@ -1,6 +1,5 @@
 import { Grid } from "@mui/material";
 import React from "react";
-import { useQuertParam } from "../../../application";
 import { useCategoryProducts } from "../../../redux";
 import { GridComponent } from "../../shared";
 import { ProductCard } from "../ProductCard";
