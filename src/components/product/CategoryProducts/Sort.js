@@ -1,13 +1,12 @@
 import { MenuItem, Select } from "@mui/material";
 import React from "react";
 
-export const Sort = ({ sort, changeSort, changePage }) => {
+export const Sort = ({ sort, changeSort }) => {
   return (
     <Select
       value={sort}
       onChange={(e) => {
         changeSort("sort", e.target.value);
-        changePage("page", 1);
       }}
     >
       <MenuItem value="price,desc">ფასის კლებადობით</MenuItem>

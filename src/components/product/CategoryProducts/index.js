@@ -14,21 +14,19 @@ export const CategoruProducts = () => {
   const { value: sort, changeQueryValue: changeSort } = useQuertParam("sort");
   const CategoruProducts = useCategoryProducts();
   const { categoryName } = useParams();
+
   useEffect(() => {
-    dispatch(
-      fetchCategoryProducts(`${categoryName}?page=${page}&size=3&sort=${sort}`)
-    );
+    changePage("page", 1);
+  }, [sort]);
+
+  useEffect(() => {
+    dispatch(fetchCategoryProducts(`${categoryName}?page=${page}&size=3&sort=${sort}`));
   }, [categoryName, page, sort]);
   return (
     <Box>
       <Sort sort={sort} changePage={changePage} changeSort={changeSort} />
       <CategoryProductList />
-      <Paginate
-        currentPage={page}
-        totalPages={CategoruProducts.totalPages}
-        changePage={changePage}
-        queryKey="page"
-      />
+      <Paginate currentPage={page} totalPages={CategoruProducts.totalPages} changePage={changePage} queryKey="page" />
     </Box>
   );
 };
